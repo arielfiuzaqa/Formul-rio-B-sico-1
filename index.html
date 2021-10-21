@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="formulario.css" media="screen"/>
+	<title>Cadastro</title>
+</head>
+
+<body>
+	<div>
+		<h1 id="titulo">Cadastro de Dev</h1>
+		<p id="sub">Complete suas Informações</p>
+        <br>
+	</div>
+
+	<form>
+		<fieldset class="grupo">
+			<div class="campo">
+				<label for="Cnome"><strong>Nome</strong></label>
+				<input type="text" name="Tnome" id="Cnome" required/>
+			</div>
+
+			<div class="campo">
+				<label for="Csobre"><strong>Sobrenome</strong></label>
+				<input type="text" name="Tsobre" id="Csobre" required/>
+			</div>
+		</fieldset>
+
+		    <div class="campo">
+		    	<label for="Cemail"><strong>E-mail</strong></label>
+		    	<input type="E-mail" name="Temail" id="Cemail" required/>
+		    </div>
+	
+	        <div class="campo">
+	        	<label><strong>Qual Aplicação você Desenvolve?</strong></label>
+	        	<label>
+	        		<input type="radio" name="Tdevweb" id="Cdevweb" value="frontend" checked/>Front-End
+	        	</label>
+	        	<label>
+	        		<input type="radio" name="Tdevweb" id="Cdevweb" value="backend"/>Back-End
+	        	</label>
+	        	<label>
+	        		<input type="radio" name="Tdevweb" id="Cdevweb" value="fullstack"/>Fullstack
+	        	</label>
+	        </div>
+
+	        <div class="campo">
+	        	<label for="Csenio"><strong>Senioridade</strong></label>
+	        	<select id="Csenio">
+	        		<option selected disabled value="">Selecione</option>
+	        		<option>Júnior</option>
+	        		<option>Pleno</option>
+	        		<option>Sênior</option>
+	        	</select>
+	        </div>
+
+	        <fieldset class="grupo">
+	        <div id="check">
+	        	<label><strong>Selecione as Tecnologias que Utiliza:</strong></label><br><br>
+	        	<input type="checkbox" name="Ttecno1" id="Ctecno1" value="HTML"/>
+	        	<label for="Ctecno1">HTML5</label>
+	        	<input type="checkbox" name="Ttecno2" id="Ctecno2" value="CSS"/>
+	        	<label for="Ctecno2">CSS3</label>
+	        	<input type="checkbox" name="Ttecno3" id="Ctecno3" value="Javascript"/>
+	        	<label for="Ctecno3">Javascript</label>
+	        	<input type="checkbox" name="Ttecno4" id="Ctecno4" value="PHP"/>
+	        	<label for="Ctecno4">PHP</label>
+	        	<input type="checkbox" name="Ttecno5" id="Ctecno5" value="C#"/>
+	        	<label for="Ctecno5">C#</label>
+	        	<input type="checkbox" name="Ttecno6" id="Ctecno6" value="Python"/>
+	        	<label for="Ctecno6">Python3</label>
+	        	<input type="checkbox" name="Ttecno7" id="Ctecno7" value="Java"/>
+	        	<label for="Ctecno7">JAVA</label>
+	        </div>
+	        </fieldset>
+
+	        <div class="campo">
+	        	<label><strong>Conte-nos um pouco da sua experiência:</strong></label>
+	        	<textarea rows="6" style="width: 26em" name="Texper" id="Cexper"></textarea>
+	        </div>
+
+	        <button class="botao" type="submit">Concluído</button>
+	</form>
+</body>
+</html>
